@@ -43,7 +43,7 @@ jobs:
           ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
-        uses: actions/upload-artifact@v3.1.3
-        with:
-          name: my-build-apk
-          path: project/app/build/outputs/apk/debug/*.apk
+  uses: actions/upload-artifact@main
+  with:
+    name: my-build-apk
+    path: project/app/build/outputs/apk/debug/*.apk
